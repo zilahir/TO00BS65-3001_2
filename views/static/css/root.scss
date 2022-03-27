@@ -1,0 +1,17 @@
+@import "./utils/reset";
+@import "./utils/pure";
+@import "./utils/fonts";
+@import "./partials/layout";
+@import "./partials/navbar";
+@import "./partials/header";
+@import "./partials/home";
+@import "./partials/newmessage";
+@import "./partials/error";
+
+p {
+    font-family: 'Space Mono', monospace;
+}
+
+h1 {
+    font-family: 'Roboto', sans-serif;
+}

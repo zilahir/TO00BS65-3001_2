@@ -1,0 +1,9 @@
+.menu-list {
+    display: flex;
+    justify-content: flex-end;
+    padding: 20px 0;
+
+    .nav-item {
+        height: unset;
+    }
+}

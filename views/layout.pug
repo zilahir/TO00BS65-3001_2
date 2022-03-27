@@ -1,0 +1,33 @@
+block variables
+html(lang="en")
+  head
+    meta(charset="UTF-8")
+    meta(http-equiv="X-UA-Compatible", content="ie=edge")
+    
+    title #{title} - #{app.name}
+    meta(name="description" content=app.description)
+    meta(name="viewport", content="width=device-width, initial-scale=1.0")
+    meta(name="keyword", content=app.keywords)
+
+    link(
+      rel="shortcut icon"
+      href="data:image/svg+xml,<svg xmlns=%22http://www.w3.org/2000/svg%22 viewBox=%220 0 100 100%22><text y=%22.9em%22 font-size=%2290%22>📖</text>"
+    )
+    link(href='https://fonts.googleapis.com/css?family=Montserrat:400,700', rel='stylesheet', type='text/css')
+    link(href='https://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic', rel='stylesheet', type='text/css')
+
+    link(rel="stylesheet", href=app.url + "/vendor/font-awesome/css/font-awesome.min.css")
+
+    style
+      include static/css/root.css
+
+  body#page-top
+    div.pure-g
+
+      div.pure-u-1-2.grid-container
+        //- Navigation
+        include includes/navbar
+        //- Body
+        div.inner-container
+          block content
+

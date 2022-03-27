@@ -1,0 +1,13 @@
+extends ../layout.pug
+block variables
+  - var pages = routes
+  - var format = formatDateFns
+
+block content
+  #home.container
+    h1= welcomeText
+    p.author= author
+    p.student-id= studentId
+    div.content
+      p This application was created for the <code>FullStack</code> course at Laurea, with the coursecode of TO00BS65-3001
+        

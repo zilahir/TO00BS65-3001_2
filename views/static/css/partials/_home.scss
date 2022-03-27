@@ -1,0 +1,55 @@
+@import '../utils/variables';
+@import './guest';
+
+#home {
+    &.container {
+        p {
+            &.author {
+                font-size: 33px;
+                margin-bottom: 5px;
+            }
+
+            &.student-id {
+                border-radius: 5px;
+                background-color: rgba($color: $code-red, $alpha: 0.6);
+                display: inline-block;
+                padding: 10px 15px;
+                margin-bottom: 0;
+                margin-top: 10px;
+                color: #fff;
+            }
+        }
+    }
+
+    .content {
+        margin: 10px 0;
+        p {
+            font-size: 20px;
+            line-height: 2;
+            code {
+                color: $code-red;
+            }
+        }
+    }
+
+    .meta {
+        margin-top: 30px;
+        display: block;
+
+        p {
+            font-size: 22px;
+
+            span {
+                border-radius: 100%;
+                background: rgba($color: $code-red, $alpha: 0.6);
+                padding: 10px;
+                display: inline-block;
+            }
+        }
+
+        .last-entry {
+            margin-top: 30px;
+            @include single-guest();
+        }
+    }
+}
