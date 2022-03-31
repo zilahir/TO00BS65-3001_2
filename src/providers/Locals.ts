@@ -43,6 +43,7 @@ class Locals {
 		const redisHttpHost = process.env.REDIS_QUEUE_HOST || '127.0.0.1';
 		const redisPrefix = process.env.REDIS_QUEUE_DB || 'q';
 		const redisDB = process.env.REDIS_QUEUE_PREFIX || 3;
+		const boredApiUrl = process.env.BORED_API_BASE_URL || ""
 
 		const formatDateFns = format;
 
@@ -68,6 +69,7 @@ class Locals {
 			queueMonitor,
 			queueMonitorHttpPort,
 			formatDateFns,
+			boredApiUrl
 		};
 	}
 

@@ -7,6 +7,7 @@
 import { NextFunction, Router, Request, Response } from 'express';
 
 import HomeController from '../controllers/Home';
+import RandomController from '../controllers/Random';
 import { MenuItem, Route } from './types';
 
 
@@ -17,6 +18,12 @@ export const routes = {
         {
             method: "GET", path: '/', controller: HomeController.index, label: 'Home'
         },
+        {
+            method: "GET", path: '/boredom', controller: HomeController.index, label: 'Boredom'
+        },
+        {
+            method: "GET", path: '/random', controller: RandomController.index, label: 'Random'
+        }
     ],
     getAllRouters: (): Route[] => routes.routes,
     getAllPaths: (): string[] => routes.routes.map(route => route.label),

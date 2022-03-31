@@ -1,4 +1,4 @@
-import { Response, Request, NextFunction } from 'express'
+import { Response, Request, NextFunction } from 'express';
 
 import Locals from '../providers/Locals';
 import { RootRequest } from '../routes/types';

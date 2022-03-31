@@ -787,12 +787,12 @@ font-family: 'Space Mono', monospace;
   box-shadow: rgba(17, 12, 46, 0.15) 0px 48px 100px 0px;
   padding: 30px; }
 
-.guestbook-menu-list {
+.menu-list {
   display: flex;
   justify-content: flex-end;
   padding: 20px 0; }
 
-.guestbook-menu-list .nav-item {
+.menu-list .nav-item {
   height: unset; }
 
 .header {
@@ -820,6 +820,9 @@ font-family: 'Space Mono', monospace;
 
 #home .content p code {
   color: #ff6961; }
+
+#home .content p a {
+  text-decoration: none; }
 
 #home .meta {
   margin-top: 30px;

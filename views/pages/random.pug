@@ -1,0 +1,11 @@
+extends ../layout.pug
+block variables
+  - var pages = routes
+  - var randomBoredom = random
+
+block content
+  #home.container
+    div.content
+      - const randomObject = randomBoredom.demo
+      include ../partials/boredom
+  

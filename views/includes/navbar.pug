@@ -1,5 +1,7 @@
+
 // Navigation
 div
     ul.pure-menu-list.menu-list
-        li.pure-menu-item.nav-item
-            a.pure-menu-link(href="/")   Home
+        each route in pages
+            li.pure-menu-item.nav-item
+                a.pure-menu-link(href=route.path)= route.label
